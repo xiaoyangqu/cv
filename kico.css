@@ -12,7 +12,7 @@ fieldset, legend, figure{
 }
 
 body{
-    color: #353535;
+    color: #1881C7;
     font: 16px/1.5 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
 }
 
@@ -258,7 +258,7 @@ article h4, article h5, article h6{
 .btn.red:hover, .btn.yellow:hover, .btn.blue:hover, .btn.green:hover{ color: #fff; }
 
 .btn.red{ background: #c40b00; }
-.btn.yellow{ background: #ffb03a; }
+.btn.yellow{ background: #eb9c26; }
 .btn.blue{ background: #3498db; }
 .btn.green{ background: #27a17e; }
 
@@ -284,7 +284,7 @@ code{
     border-radius: 4px;
     padding: .25em .5em;
     word-break: break-all;
-    background-color: #f7f2f4;
+    background-color: #F4F4F4;
 }
 
 pre > code{
