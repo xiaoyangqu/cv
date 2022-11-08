@@ -20,7 +20,7 @@ a{ color: #C43931; }
     position: fixed;
     overflow: hidden;
     overflow-y: auto;
-    background: #4b4b4b;
+    background: #787878;
 }
 
 /* -- 头像 */
@@ -104,7 +104,7 @@ main section{
 }
 
 #info{ background: url(img/bg-1.png) fixed; }
-#skills{ background: #f8bd24; }
+#skills{ background: #F06D7D; }
 #works{ background: url(img/bg-2.png) fixed; }
 #team{ background: url(img/bg-3.png) fixed; }
 
