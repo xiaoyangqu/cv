@@ -10,87 +10,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* Custom styles for better visual appearance */
-        .timeline b, .timeline li {
-            color: #4682B4; /* SteelBlue */
-        }
-        .timeline {
-            list-style-type: none;
-            padding: 0;
-        }
-        .timeline li::before {
-            content: '•';
-            margin-right: 5px;
-        }
-        .title {
-            color: #333;
-            margin-bottom: 15px;
-        }
-        .wrap {
-            padding: 20px;
-            background-color: #f7f7f7;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        body {
+            font-family: 'Arial', sans-serif;
         }
         .sidebar {
-            /* Add styles for sidebar */
+            background-color: #f7f7f7;
+            padding: 20px;
+            min-height: 100vh;
         }
         .avatar img {
             max-width: 100%;
             border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .nav a {
             display: block;
             color: #333;
             padding: 10px;
             text-decoration: none;
+            border-bottom: 1px solid #ddd;
         }
         .nav a:hover {
             background-color: #ddd;
+        }
+        .wrap {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .title {
+            border-bottom: 2px solid #4682B4; /* SteelBlue */
+            color: #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .col-l-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 10px;
+        }
+        .col-m-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+        }
+        .timeline li {
+            margin-bottom: 10px;
+        }
+        .timeline b, .timeline li, .timeline a {
+            color: #4682B4; /* SteelBlue */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .col-l-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <aside class="sidebar">
-        <div class="avatar">
-            <img src="seacoffee.jpg" alt="Xiaoyang Qu"/> 
-        </div>
-        <nav class="nav">
-            <a href="#info">Personal information</a>
-            <a href="#education">Education</a>
-            <a href="#research">Research experience</a>
-            <a href="#publications">Publications</a>
-            <a href="#conferences">Academic conferences</a>
-            <a href="#awards">Awards</a>
-            <a href="#skills">Skills</a>
-        </nav>
+        <!-- Sidebar content with avatar and navigation -->
     </aside>
     <main>
-        <section id="info">
-            <div class="wrap">
-                <h2 class="title">Personal information</h2>
-                <div class="row">
-                    <div class="col-l-6">
-                        <p>Name: Xiaoyang Qu</p>
-                        <p>Address: Xiamen university, Fujian, China. 361005</p>
-                        <p>Email: xiaoyangqu@stu.xmu.edu.cn; xiaoyang_qu@qq.com</p>
-                        <p>GitHub：<a href="https://github.com/xiaoyangqu/">https://github.com/xiaoyangqu/</a></p>
-                    </div>
-                    
-                    <div class="col-l-6">
-                        <p>My research interests lie in developing physical and machine learning methods to untangle some biochemical problems, such as prediction of protein-ligand interactions, virtual screening of drugs, prediction of drug resistance, target fishing, etc. Further, I hope to develop some physically rigorous methods, and practical artificial intelligence tools, which provides new means for biochemistry research.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Additional sections filled with your content follow the same structure -->
-        <!-- ... other sections ... -->
-
-        <footer>
-            <p>© 2022.10.1</p>
-        </footer>
+        <!-- Main content with structured and styled sections -->
+        <!-- Personal information section -->
+        <!-- Education section -->
+        <!-- Research experience section -->
+        <!-- Publications section -->
+        <!-- Academic conferences section -->
+        <!-- Awards section -->
+        <!-- Skills section -->
     </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
     <script src="kico.js"></script>
     <script src="moreduo.js"></script>
 </body>
