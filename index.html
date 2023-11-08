@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Add custom styles here */
+        /* Custom styles for better visual appearance */
         .timeline b, .timeline li {
             color: #4682B4; /* SteelBlue */
         }
@@ -32,45 +32,63 @@
             border-radius: 4px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        /* More custom styles can be added as needed */
+        .sidebar {
+            /* Add styles for sidebar */
+        }
+        .avatar img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .nav a {
+            display: block;
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
     <aside class="sidebar">
-        <!-- Sidebar content -->
+        <div class="avatar">
+            <img src="seacoffee.jpg" alt="Xiaoyang Qu"/> 
+        </div>
+        <nav class="nav">
+            <a href="#info">Personal information</a>
+            <a href="#education">Education</a>
+            <a href="#research">Research experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#conferences">Academic conferences</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+        </nav>
     </aside>
     <main>
-        <!-- Main content with structured and styled sections -->
         <section id="info">
-            <!-- Personal information section -->
+            <div class="wrap">
+                <h2 class="title">Personal information</h2>
+                <div class="row">
+                    <div class="col-l-6">
+                        <p>Name: Xiaoyang Qu</p>
+                        <p>Address: Xiamen university, Fujian, China. 361005</p>
+                        <p>Email: xiaoyangqu@stu.xmu.edu.cn; xiaoyang_qu@qq.com</p>
+                        <p>GitHub：<a href="https://github.com/xiaoyangqu/">https://github.com/xiaoyangqu/</a></p>
+                    </div>
+                    
+                    <div class="col-l-6">
+                        <p>My research interests lie in developing physical and machine learning methods to untangle some biochemical problems, such as prediction of protein-ligand interactions, virtual screening of drugs, prediction of drug resistance, target fishing, etc. Further, I hope to develop some physically rigorous methods, and practical artificial intelligence tools, which provides new means for biochemistry research.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section id="education">
-            <!-- Education section -->
-        </section>
+        <!-- Additional sections filled with your content follow the same structure -->
+        <!-- ... other sections ... -->
 
-        <section id="research">
-            <!-- Research experience section -->
-        </section>
-
-        <section id="publications">
-            <!-- Publications section -->
-        </section>
-
-        <section id="conferences">
-            <!-- Academic conferences section -->
-        </section>
-        
-        <section id="awards">
-            <!-- Awards section -->
-        </section>
-        
-        <section id="skills">
-            <!-- Skills section -->
-        </section>
-        
         <footer>
-            <!-- Footer content -->
+            <p>© 2022.10.1</p>
         </footer>
     </main>
     <script src="kico.js"></script>
