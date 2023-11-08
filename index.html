@@ -9,31 +9,32 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Custom styles for better visual appearance */
-        body {
-            font-family: 'Arial', sans-serif;
-        }
+        /* Sidebar styles */
         .sidebar {
-            background-color: #f7f7f7;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            background-color: #343a40;
             padding: 20px;
-            min-height: 100vh;
-        }
-        .avatar img {
-            max-width: 100%;
-            border-radius: 50%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            overflow-y: auto;
         }
         .nav a {
-            display: block;
-            color: #333;
-            padding: 10px;
+            color: #fff;
+            padding: 10px 15px;
             text-decoration: none;
-            border-bottom: 1px solid #ddd;
+            display: block;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
         .nav a:hover {
-            background-color: #ddd;
+            background-color: #495057;
+        }
+        /* Main content styles */
+        main {
+            margin-left: 250px; /* Same as sidebar width */
+            padding: 20px;
         }
         .wrap {
             background-color: #fff;
@@ -42,45 +43,31 @@
             border-radius: 4px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .title {
-            border-bottom: 2px solid #4682B4; /* SteelBlue */
+        /* Typography and color scheme */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             color: #333;
+            background-color: #e9ecef;
+        }
+        .title {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-        .col-l-6 {
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 10px;
-        }
-        .col-m-12 {
-            flex: 0 0 100%;
-            max-width: 100%;
-            padding: 10px;
-        }
-        .timeline {
-            list-style-type: none;
-            padding: 0;
-        }
-        .timeline li {
-            margin-bottom: 10px;
-        }
-        .timeline b, .timeline li, .timeline a {
-            color: #4682B4; /* SteelBlue */
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
+        /* Responsive design */
         @media screen and (max-width: 768px) {
-            .col-l-6 {
-                flex: 0 0 100%;
-                max-width: 100%;
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .nav a {
+                display: inline-block;
+            }
+            main {
+                margin-left: 0;
             }
         }
     </style>
@@ -88,20 +75,23 @@
 <body>
     <aside class="sidebar">
         <!-- Sidebar content with avatar and navigation -->
+        <div class="avatar">
+            <img src="seacoffee.jpg" alt="Xiaoyang Qu" style="width:100%; border-radius:50%;"> 
+        </div>
+        <nav class="nav">
+            <a href="#info">Personal information</a>
+            <a href="#education">Education</a>
+            <a href="#research">Research experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#conferences">Academic conferences</a>
+            <a href="#awards">Awards</a>
+            <a href="#skills">Skills</a>
+        </nav>
     </aside>
     <main>
         <!-- Main content with structured and styled sections -->
-        <!-- Personal information section -->
-        <!-- Education section -->
-        <!-- Research experience section -->
-        <!-- Publications section -->
-        <!-- Academic conferences section -->
-        <!-- Awards section -->
-        <!-- Skills section -->
+        <!-- The content from your original HTML will be inserted here -->
     </main>
-    <footer>
-        <!-- Footer content -->
-    </footer>
     <script src="kico.js"></script>
     <script src="moreduo.js"></script>
 </body>
